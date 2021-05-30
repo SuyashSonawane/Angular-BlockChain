@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "savjeecoin-frontend": {
+    "SuyashCoins": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/savjeecoin-frontend",
+            "outputPath": "dist/SuyashCoins",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "savjeecoin-frontend:build"
+            "browserTarget": "SuyashCoins:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "savjeecoin-frontend:build:production"
+              "browserTarget": "SuyashCoins:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "savjeecoin-frontend:build"
+            "browserTarget": "SuyashCoins:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "savjeecoin-frontend-e2e": {
+    "SuyashCoins-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "savjeecoin-frontend:serve"
+            "devServerTarget": "SuyashCoins:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "savjeecoin-frontend:serve:production"
+              "devServerTarget": "SuyashCoins:serve:production"
             }
           }
         },
@@ -135,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "savjeecoin-frontend"
+  "defaultProject": "SuyashCoins"
 }
